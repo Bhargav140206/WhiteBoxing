@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerMovement2D : MonoBehaviour
 {
     [Header("Speed Control")]
-    public float speed = 6f; // 5–10
+    public float speed = 6f; // 5ï¿½10
     public float minVelocity = 4f;
     public float maxVelocity = 7f;
 
@@ -27,6 +27,6 @@ public class PlayerMovement2D : MonoBehaviour
 
         float velocity = Mathf.Clamp(speed, minVelocity, maxVelocity);
 
-        rb.velocity = direction * velocity;
+        rb.linearVelocity = direction * velocity;
     }
 }
